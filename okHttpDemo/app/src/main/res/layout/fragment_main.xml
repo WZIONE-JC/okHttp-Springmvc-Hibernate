@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress:"/>
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:max="100"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Received:"/>
+
+            <EditText
+                android:id="@+id/received"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"/>
+            <Button
+                android:id="@+id/getTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getTest"/>
+
+            <Button
+                android:id="@+id/postJsonTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="postJsonTest"/>
+
+            <Button
+                android:id="@+id/postFormTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="postFormTest"/>
+
+            <Button
+                android:id="@+id/getAsyncTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="getAsyncTest"/>
+
+            <Button
+                android:id="@+id/postJsonAsyncTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="postJsonAsyncTest"/>
+
+            <Button
+                android:id="@+id/postFormAsyncTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="postFormAsyncTest"/>
+
+            <Button
+                android:id="@+id/uploadFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="uploadFile"/>
+
+            <Button
+                android:id="@+id/uploadFileWithParam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="uploadFileWithParam"/>
+
+            <Button
+                android:id="@+id/uploadFileWithParamAndProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="uploadFileWithParamAndProgress"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

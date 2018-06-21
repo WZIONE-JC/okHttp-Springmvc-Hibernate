@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gradle : com.baidu.zhaocc : FileUpAndDown-1.0-SNAPSHOT.war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59e5d9ff-4e4a-4139-ad7a-d984cd3dd504" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SimpleGetAndPostController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/SimpleGetAndPostController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userInfo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userInfo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="71" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/model/UserModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUpAndDownController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/FileUpAndDownController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1145#1146#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>downloadFileName</find>
+      <find>&lt;/property&gt;</find>
+      <find>org.springframework.web.filter.CharacterEncodingFilter</find>
+      <find>CharacterEncodingFilter</find>
+      <find>file</find>
+      <find>FileUploader</find>
+      <find>inputStream</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\zhaochaochao\.gradle\wrapper\dists\gradle-4.3-all\2c1rgv6vofd95kl0ugolfeu5r\gradle-4.3" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.3" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="FileUpAndDown" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="FileUpAndDown" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'FileUpAndDown'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'FileUpAndDown'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'FileUpAndDown'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'FileUpAndDown'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'FileUpAndDown'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'FileUpAndDown'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates a war archive with all the compiled classes, the web-app content and the libraries." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="war" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'FileUpAndDown'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'FileUpAndDown'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'FileUpAndDown'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6114724307020" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1258019354" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="407797137" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="72951609" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="FileUpAndDown" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-base-services-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-base-services-groovy-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-build-cache-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-build-option-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-cli-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-core-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-core-api-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-docs-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-installation-beacon-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-jvm-services-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-kotlin-dsl-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-kotlin-dsl-tooling-builders-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-kotlin-dsl-tooling-models-0.12.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-launcher-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-logging-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-messaging-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-model-core-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-model-groovy-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-native-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-persistent-cache-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-process-services-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-resources-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-runtime-api-info-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-tooling-api-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/gradle-wrapper-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-announce-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-antlr-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-build-cache-http-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-build-comparison-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-build-init-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-code-quality-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-composite-builds-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-dependency-management-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-diagnostics-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-ear-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-ide-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-ide-native-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-ide-play-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-ivy-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-jacoco-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-javascript-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-language-groovy-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-language-java-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-language-jvm-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-language-native-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-language-scala-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-maven-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-osgi-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-platform-base-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-platform-jvm-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-platform-native-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-platform-play-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-plugin-development-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-plugin-use-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-plugins-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-publish-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-reporting-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-resources-gcs-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-resources-http-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-resources-s3-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-resources-sftp-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-scala-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-signing-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-test-kit-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-testing-base-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-testing-jvm-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-testing-native-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-tooling-api-builders-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-version-control-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/gradle-workers-4.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.3-all/2c1rgv6vofd95kl0ugolfeu5r/gradle-4.3/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/FileUploader.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/success.jsp" />
+        <option value="$PROJECT_DIR$/src/main/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regsiter.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/model/UserModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/download.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/model/UserInfoModel.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userInfo.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/SimpleGetAndPostController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FileUploaderWithFormData.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FileUploader.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/FileUpAndDownController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhaocc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zhaocc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FileUpAndDown" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileUpAndDown" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3045977" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\zhaochaochao\IdeaProjects\FileUpAndDown\src\main\resouces" />
+      <recent name="D:\Users\zhaochaochao\IdeaProjects\FileUpAndDown\src\main\java" />
+      <recent name="D:\Users\zhaochaochao\IdeaProjects\FileUpAndDown\src\main" />
+      <recent name="D:\Users\zhaochaochao\IdeaProjects\FileUpAndDown\src\main\webapp\WEB-INF\jsp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\zhaochaochao\IdeaProjects\FileUpAndDown\src\main\webapp\WEB-INF\jsp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.FileUpAndDown">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="build" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="FileUpAndDown" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 6.0.37" ALTERNATIVE_JRE_ENABLED="false" show_console_on_std_err="true" show_console_on_std_out="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : com.baidu.zhaocc : FileUpAndDown-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_FileUpAndDown_2" />
+        <option name="HTTPS_PORT" value="9090" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62817" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.baidu.zhaocc : FileUpAndDown-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.build" />
+      <item itemvalue="Tomcat Server.FileUpAndDown" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59e5d9ff-4e4a-4139-ad7a-d984cd3dd504" name="Default" comment="" />
+      <created>1528609030811</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1528609030811</updated>
+      <workItem from="1528609034928" duration="1180000" />
+      <workItem from="1528610264878" duration="18446000" />
+      <workItem from="1528855741054" duration="2690000" />
+      <workItem from="1528862039703" duration="621000" />
+      <workItem from="1528862951057" duration="6832000" />
+      <workItem from="1528879090610" duration="14937000" />
+      <workItem from="1528988287839" duration="2643000" />
+      <workItem from="1529203145046" duration="1111000" />
+      <workItem from="1529278578418" duration="6055000" />
+      <workItem from="1529388395399" duration="3615000" />
+      <workItem from="1529495657021" duration="12418000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="70548000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50073206" side_tool="true" weight="0.32972136" />
+      <window_info anchor="bottom" id="Application Servers" order="1" sideWeight="0.49926794" weight="0.32972136" />
+      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49926794" weight="0.3993808" />
+      <window_info anchor="bottom" id="TODO" order="14" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.44117647" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49926794" visible="true" weight="0.40402478" />
+      <window_info anchor="bottom" id="Spring" order="15" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.33601758" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="right" id="Gradle" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Build" order="0" weight="0.47832817" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/FileUpAndDownController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1786">
+          <caret line="94" column="75" selection-start-line="94" selection-start-column="56" selection-end-line="94" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/SimpleGetAndPostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="12" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="68" column="9" lean-forward="true" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4199">
+          <caret line="221" column="56" selection-start-line="221" selection-start-column="56" selection-end-line="221" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/download.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/FileUpAndDownController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="58" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="210" selection-start-line="210" selection-end-line="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/web/multipart/MultipartFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.3.6.RELEASE/51719142a860240ba4648bb6384e5653bffc82e9/spring-webmvc-4.3.6.RELEASE-sources.jar!/org/springframework/web/servlet/view/JstlView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/ServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/HttpHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="677" column="16" selection-start-line="677" selection-start-column="16" selection-end-line="677" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/download.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/HttpStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/http/ResponseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServletResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/web/filter/CharacterEncodingFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.3.6.RELEASE/e41b15afc71764f982eec257729ac3fddda78f3e/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ModelAttribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="67" column="50" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/model/UserInfoModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
+          <folding>
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/model/UserModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="71" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/SimpleGetAndPostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FileUploader.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/FileUploaderWithFormData.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="6" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidu/zhaocc/controller/FileUpAndDownController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Gradle : com.baidu.zhaocc : FileUpAndDown-1.0-SNAPSHOT.war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37011495" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37011495" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37011495" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37011495" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FileUpAndDown_main|FileUpAndDown</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: com.fasterxml.jackson.core:jackson-annotations:2.8.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3045977" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
