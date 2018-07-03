@@ -18,6 +18,7 @@ import android.widget.Toast;
 import com.baidu.zhaocc.httpclient.HttpCallback;
 import com.baidu.zhaocc.httpclient.ReqProgressCallback;
 import com.baidu.zhaocc.httpclient.RequestManager;
+import com.baidu.zhaocc.model.Employee;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -54,6 +55,9 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         Button uploadFile = view.findViewById(R.id.uploadFile);
         Button uploadFileWithParams = view.findViewById(R.id.uploadFileWithParam);
         Button uploadWithParaAndProg = view.findViewById(R.id.uploadFileWithParamAndProgress);
+        Button downloadFile = view.findViewById(R.id.downloadFile);
+        Button downloadFileWithProg = view.findViewById(R.id.downdloadFileWithProgress);
+        Button register = view.findViewById(R.id.register);
         progressBar = view.findViewById(R.id.progress);
         recEt = view.findViewById(R.id.received);
         getTestBt.setOnClickListener(this);
@@ -65,6 +69,9 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         uploadFile.setOnClickListener(this);
         uploadFileWithParams.setOnClickListener(this);
         uploadWithParaAndProg.setOnClickListener(this);
+        downloadFile.setOnClickListener(this);
+        downloadFileWithProg.setOnClickListener(this);
+        register.setOnClickListener(this);
     }
 
     @Override
@@ -97,6 +104,15 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
                 break;
             case R.id.uploadFileWithParamAndProgress:
                 uploadWithParaAndProg();
+                break;
+            case R.id.downloadFile:
+                downloadFile();
+                break;
+            case R.id.downdloadFileWithProgress:
+                downloadFileWithProgress();
+                break;
+            case R.id.register:
+                registerEmployee();
                 break;
         }
     }
@@ -353,6 +369,69 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
                 progressBar.setProgress(progress);
             }
         });
+    }
+
+    private void downloadFile() {
+        RequestManager.getInstance(getContext()).downloadFile("testfile",
+                getContext().getFilesDir().getAbsolutePath(), new HttpCallback<File>() {
+                    @Override
+                    public void onReqSuccess(File result) {
+                        Log.d(TAG, "onReqSuccess");
+                        Toast.makeText(getContext(), "下载成功", Toast.LENGTH_SHORT).show();
+                        Log.d(TAG, "File path:" + result.getAbsolutePath());
+                    }
+
+                    @Override
+                    public void onReqFail(String errorMsg) {
+                        Log.d(TAG, "onReqFail");
+                        Toast.makeText(getContext(), "下载失败", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    private void downloadFileWithProgress() {
+        RequestManager.getInstance(getContext()).downloadFile("测试文件",
+                getContext().getFilesDir().getAbsolutePath(), new ReqProgressCallback<File>() {
+                    @Override
+                    public void onReqSuccess(File result) {
+                        Log.d(TAG, "onReqSuccess");
+                        Toast.makeText(getContext(), "下载成功", Toast.LENGTH_SHORT).show();
+                        Log.d(TAG, "File path:" + result.getAbsolutePath());
+                    }
+
+                    @Override
+                    public void onReqFail(String errorMsg) {
+                        Log.d(TAG, "onReqFail");
+                        Toast.makeText(getContext(), "下载失败", Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onProgress(long total, long current) {
+                        final int progress = (int) (((float) current / (float) total) * 100.0);
+                        Log.d(TAG, "onProgress total:" + total + " current:" + current + " progress:" + progress);
+                        progressBar.setProgress(progress);
+                    }
+                });
+    }
+
+    private void registerEmployee() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                final String result = RequestManager.getInstance(getContext()).register("/simple/post", new Employee("chaochao", "zhao"));
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        recEt.setText(result);
+                        if (result.equals("success")) {
+                            Toast.makeText(getContext(), "注册成功", Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(getContext(), "注册失败", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+        }).start();
     }
 
     private File createFile() {

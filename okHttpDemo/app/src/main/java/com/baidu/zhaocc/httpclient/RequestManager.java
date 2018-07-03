@@ -5,8 +5,13 @@ import android.os.Build;
 import android.os.Handler;
 import android.util.Log;
 
+import com.baidu.zhaocc.model.Employee;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
@@ -520,6 +525,141 @@ public class RequestManager {
                 }
             }
         };
+    }
+
+    public <T> void downloadFile(String fileUrl, final String destFileDir, final HttpCallback<T> callback) {
+        final File file = new File(destFileDir, fileUrl);
+        if (file.exists()) {
+            LOGD("file has existed");
+        }
+
+        Request request = addHeaders().url(BASE_URL + "/FileUpAndDown/download/" + fileUrl).build();
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                LOGE("下载失败");
+                handleError("下载失败", callback);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                InputStream is = null;
+                byte[] buf = new byte[2];
+                int len = 0;
+                FileOutputStream fos = null;
+                try {
+                    long total = response.body().contentLength();
+                    Log.e(TAG, "total------>" + total);
+                    long current = 0;
+                    is = response.body().byteStream();
+                    fos = new FileOutputStream(file);
+                    while ((len = is.read(buf)) != -1) {
+                        current += len;
+                        fos.write(buf, 0, len);
+                        Log.e(TAG, "current------>" + current);
+                    }
+                    fos.flush();
+                    handleSuccess((T) file, callback);
+                } catch (IOException e) {
+                    Log.e(TAG, e.toString());
+                    handleError("下载失败", callback);
+                } finally {
+                    try {
+                        if (is != null) {
+                            is.close();
+                        }
+                        if (fos != null) {
+                            fos.close();
+                        }
+                    } catch (IOException e) {
+                        Log.e(TAG, e.toString());
+                    }
+                }
+            }
+        });
+    }
+
+    public <T> void downloadFile(String fileUrl, final String destFileDir, final ReqProgressCallback<T> callback) {
+        final File file = new File(destFileDir, fileUrl);
+        if (file.exists()) {
+            LOGD("file has existed");
+        }
+
+        Request request = addHeaders().url(BASE_URL + "/FileUpAndDown/download/" + fileUrl).build();
+        Call call = mOkHttpClient.newCall(request);
+        call.enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+                LOGE("下载失败");
+                handleError("下载失败", callback);
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+                String header = response.header("Content-Disposition");
+                String headers = response.headers().toString();
+                LOGD("Content-Disposition:" + header + " headers;" + headers);
+                InputStream is = null;
+                byte[] buf = new byte[2];
+                int len = 0;
+                FileOutputStream fos = null;
+                try {
+                    long total = response.body().contentLength();
+                    Log.e(TAG, "total------>" + total);
+                    long current = 0;
+                    is = response.body().byteStream();
+                    fos = new FileOutputStream(file);
+                    while ((len = is.read(buf)) != -1) {
+                        current += len;
+                        fos.write(buf, 0, len);
+                        Log.e(TAG, "current------>" + current + " buf:" + new String(buf));
+                        progressCallBack(total, current, callback);
+                        try {
+                            Thread.sleep(500);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    fos.flush();
+                    handleSuccess((T) file, callback);
+                } catch (IOException e) {
+                    Log.e(TAG, e.toString());
+                    handleError("下载失败", callback);
+                } finally {
+                    try {
+                        if (is != null) {
+                            is.close();
+                        }
+                        if (fos != null) {
+                            fos.close();
+                        }
+                    } catch (IOException e) {
+                        Log.e(TAG, e.toString());
+                    }
+                }
+            }
+        });
+    }
+
+    public String register(String requestUrl, Employee employee) {
+        StringBuilder sb = new StringBuilder();
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+            RequestBody requestBody = RequestBody.create(MEDIA_TYPE_JSON, objectMapper.writeValueAsBytes(employee));
+            LOGD("requestUrl:" + requestUrl);
+            LOGD("employee:" + employee.toString());
+            Request request = addHeaders().url(BASE_URL + requestUrl).post(requestBody).build();
+            Call call = mOkHttpClient.newCall(request);
+            Response response = call.execute();
+            String body = response.body().string();
+            LOGD("status:" + response.code() + " response:" + body);
+            LOGD("full response:" + response.toString());
+            return body;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     /**

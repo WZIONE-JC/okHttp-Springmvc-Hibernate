@@ -4,11 +4,16 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.baidu.zhaocc.okhttpdemo"
-        minSdkVersion 24
+        minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
     }
     buildTypes {
         release {
@@ -16,10 +21,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+ext {
+    jacksonVersion = '2.9.5'
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     implementation 'com.android.support:design:27.1.1'
@@ -27,4 +41,17 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: jacksonVersion
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonVersion
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: jacksonVersion
+    // 引入XML功能
+    implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-xml', version: jacksonVersion
+    // 比JDK自带XML实现更高效的类库
+    implementation 'com.fasterxml.woodstox:woodstox-core:5.1.0'
+    // Java 8 新功能
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version: jacksonVersion
+    implementation group: 'com.fasterxml.jackson.module', name: 'jackson-module-parameter-names', version: jacksonVersion
+    implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: jacksonVersion
+    compileOnly 'org.projectlombok:lombok:1.16.14'
+    implementation 'javax.annotation:javax.annotation-api:1.2'
 }
