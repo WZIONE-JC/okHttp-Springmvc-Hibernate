@@ -1,6 +1,9 @@
 package com.baidu.zhaocc.controller;
 
+import com.baidu.zhaocc.dao.EmployeeDao;
+import com.baidu.zhaocc.model.Employee;
 import com.baidu.zhaocc.model.UserInfoModel;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -21,7 +24,7 @@ import java.io.InputStream;
 public class SimpleGetAndPostController {
     private static Logger logger = Logger.getLogger(FileUpAndDownController.class);
 
-    @ModelAttribute("user")        //① 暴露表单引用对象为模型数据
+    @ModelAttribute("user")
     public UserInfoModel getUser() {
         return new UserInfoModel();
     }
@@ -34,11 +37,6 @@ public class SimpleGetAndPostController {
         return user;
     }
 
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
-    public String getView() {
-        return "userInfo";
-    }
-
     @RequestMapping(value = "/post", method = RequestMethod.POST)
     @ResponseBody
     public String doPost(@ModelAttribute("user") UserInfoModel userInfo, HttpServletRequest request, InputStream inputStream) {
@@ -49,6 +47,27 @@ public class SimpleGetAndPostController {
             String str = new String(bytes, request.getCharacterEncoding());
             logger.debug("request body:" + str);
             logger.debug("userInfo:" + userInfo.toString());
+            return "success";
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "error";
+    }
+
+    @RequestMapping(value = "/post", method = RequestMethod.POST, headers = "Content-Type=application/json")
+    @ResponseBody
+    public String register( HttpServletRequest request, InputStream inputStream) {
+        try {
+            logger.debug("doPost url:" + request.getRequestURI() + " contentType:" + request.getContentType());
+            byte[] bytes = new byte[request.getContentLength()];
+            inputStream.read(bytes);
+            String str = new String(bytes, request.getCharacterEncoding());
+            logger.debug("request body:" + str);
+            ObjectMapper objectMapper = new ObjectMapper();
+            Employee employee = objectMapper.readValue(bytes, Employee.class);
+            logger.debug("employee:" + employee.toString());
+            int id = EmployeeDao.save(employee);
+            logger.debug("id:" + id);
             return "success";
         } catch (Exception e) {
             e.printStackTrace();

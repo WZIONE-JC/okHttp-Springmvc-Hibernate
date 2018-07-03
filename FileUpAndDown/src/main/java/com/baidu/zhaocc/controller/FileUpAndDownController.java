@@ -102,11 +102,30 @@ public class FileUpAndDownController {
         return "error";
     }
 
-    @RequestMapping(value =  "/download")
+    @RequestMapping(value =  "/download/")
     public ResponseEntity<byte[]> download(HttpServletRequest request,
                                            @RequestParam(value = "filename") String fileName) throws Exception {
         logger.debug("download filename:" + fileName);
         String path = request.getRealPath( "/images/");
+        logger.debug("full file path:" + path + File.separator + fileName);
+        File filePath = new File(path, fileName);
+        if (filePath.exists()) {
+            HttpHeaders headers = new HttpHeaders();
+            // 解决中文乱码
+            String downloadFielName = new String(fileName.getBytes("UTF-8"),"iso-8859-1");
+            headers.setContentDispositionFormData("attachment", downloadFielName);
+            headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+            return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(filePath),
+                    headers, HttpStatus.CREATED);
+        }
+        return  new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
+
+    @RequestMapping(value =  "/download/{filename:.*}")
+    public ResponseEntity<byte[]> download2(HttpServletRequest request,
+                                           @PathVariable(value = "filename") String fileName) throws Exception {
+        logger.debug("download filename:" + fileName);
+        String path = request.getRealPath( "/files/");
         logger.debug("full file path:" + path + File.separator + fileName);
         File filePath = new File(path, fileName);
         if (filePath.exists()) {
