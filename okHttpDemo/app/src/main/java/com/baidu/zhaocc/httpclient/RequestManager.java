@@ -13,8 +13,22 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
+import java.security.KeyStore;
+import java.security.SecureRandom;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+import java.security.cert.X509Certificate;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.KeyManagerFactory;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.SSLSession;
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.TrustManagerFactory;
+import javax.net.ssl.X509TrustManager;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -38,13 +52,38 @@ public class RequestManager {
     private static final String TAG = RequestManager.class.getSimpleName();
     private static RequestManager sRequestManager;
     private Handler mHandler;
+    private static final String ZHAOCC_CRT =
+            "-----BEGIN CERTIFICATE-----\n" +
+                    "MIIDejCCAmKgAwIBAgIEOzIKajANBgkqhkiG9w0BAQsFADBiMQswCQYDVQQGEwJj\n" +
+                    "bjEQMA4GA1UECBMHQmVpamluZzEQMA4GA1UEBxMHQmVpamluZzEOMAwGA1UEChMF\n" +
+                    "YmFpZHUxDjAMBgNVBAsTBWJhaWR1MQ8wDQYDVQQDEwZ6aGFvY2MwHhcNMTkwMzIy\n" +
+                    "MDMxOTQ3WhcNMTkwNjIwMDMxOTQ3WjBiMQswCQYDVQQGEwJjbjEQMA4GA1UECBMH\n" +
+                    "QmVpamluZzEQMA4GA1UEBxMHQmVpamluZzEOMAwGA1UEChMFYmFpZHUxDjAMBgNV\n" +
+                    "BAsTBWJhaWR1MQ8wDQYDVQQDEwZ6aGFvY2MwggEiMA0GCSqGSIb3DQEBAQUAA4IB\n" +
+                    "DwAwggEKAoIBAQCnxVhH/2rnazBq7euECUj+1h8Fu3OmZ9ukZuGHTZU9ih8vq6yk\n" +
+                    "xFrD2MFmt9xzcUlvVDqcOJnx1J/demwvadmRMjKYbFDOEtYsO3E6XvZt2Cj+NJ+O\n" +
+                    "toGTfEcu80MJHG6TanXwvVTqPLH0Lzo2l6x4jmhRC8GCSIjlRfA3cRvhcyWGeR85\n" +
+                    "4+3YM8+emDRffrWiP86ip0szjcHKpkmti/JYD8ydHIalNCEPOktdbfrcOdzgqBnA\n" +
+                    "EQOV4Ec8aj6WvcxotwV7owvWtDpPadkuq7suI7OYUNuHgg1GvF0Wn5ldYLmwh8HS\n" +
+                    "MMnWKBPApLLruCkv3JISD/iZwEzp+jf+UWZvAgMBAAGjODA2MBUGA1UdEQQOMAyC\n" +
+                    "BHNwYW2HBMCoAAEwHQYDVR0OBBYEFBN4E7VADxgsflIeP0ukacKdYdAHMA0GCSqG\n" +
+                    "SIb3DQEBCwUAA4IBAQBFMfigOxccCmNjz8vy0SCmaptLIBkLiMLSrB7FNPi7YPEp\n" +
+                    "m16cg+23GHQCoNCNMPG5Bt4SsvFA7ts2lD6X729hll1W+om5g/3nQIR3rfFoW9it\n" +
+                    "iIuNs6R6kThK76R1KVSG/fs+VXswRkx2E1jhw4IOYiuJfhHbW2+Mi1Ypn7tLVnSk\n" +
+                    "Dwyu7Axo3tcoy+ksX72G7ODbEIZQQCTiyp7MD2iu5ceS4FQJPfUfq/wu7EyzLlV9\n" +
+                    "z+pCt/NtmhwxrS6dK9Mx+9+S3/c9gwSv5sJ7QiYyY1qYBOCul13iy3lV4nh2hZym\n" +
+                    "otgqyc01nXDaHAUVPucoTPcMH1Zdb58axgMgNRHV\n" +
+                    "-----END CERTIFICATE-----";
 
-    private static final MediaType MEDIA_TYPE_FORM = MediaType.parse("application/x-www-form-urlencoded; charset=utf-8");
+    private static final MediaType MEDIA_TYPE_FORM = MediaType.parse("application/x-www-form-urlencoded; " +
+            "charset=utf-8");
     private static final MediaType MEDIA_TYPE_MARKDOWN = MediaType.parse("text/x-markdown; charset=utf-8");
     private static final MediaType MEDIA_TYPE_JSON = MediaType.parse("application/json; charset=utf-8");
     private static final MediaType MEDIA_OBJECT_STREAM = MediaType.parse("application/octet-stream");
 
-    private static final String BASE_URL = "http://211s5101f6.imwork.net:10945";//请求接口根地址
+    // 请求接口根地址
+    private static final String HTTP_BASE_URL = "http://172.21.205.137:8080";
+    private static final String BASE_URL = "https://172.21.205.137:443";
     public static final int TYPE_GET = 0;//get请求
     public static final int TYPE_POST_JSON = 1;//post请求参数为json
     public static final int TYPE_POST_FORM = 2;//post请求参数为表单
@@ -59,12 +98,54 @@ public class RequestManager {
 
     public RequestManager(Context context) {
         //初始化OkHttpClient
-        mOkHttpClient = new OkHttpClient().newBuilder()
-                .connectTimeout(10, TimeUnit.SECONDS)           //设置超时时间
-                .readTimeout(10, TimeUnit.SECONDS)              //设置读取超时时间
-                .writeTimeout(10, TimeUnit.SECONDS)             //设置写入超时时间
-                .build();
-        mHandler = new Handler(context.getMainLooper());
+        try {
+            final X509TrustManager trustManager = new X509TrustManager() {
+                @Override
+                public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                    LOGD("checkClientTrusted chain: " + chain + " authType: " + authType);
+                    for (X509Certificate certificate : chain) {
+                        LOGD("certificate: " + certificate);
+                    }
+                }
+
+                @Override
+                public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                    LOGD("checkServerTrusted chain: " + chain + " authType: " + authType);
+                }
+
+                @Override
+                public X509Certificate[] getAcceptedIssuers() {
+                    LOGD("getAcceptedIssuers");
+                    return new X509Certificate[0];
+                }
+            };
+
+            SSLContext sslContext = SSLContext.getInstance("SSL");
+            sslContext.init(null, new TrustManager[]{trustManager}, new SecureRandom());
+            SSLSocketFactory sslSocketFactory = sslContext.getSocketFactory();
+            mOkHttpClient = new OkHttpClient().newBuilder()
+                    .connectTimeout(10, TimeUnit.SECONDS)           //设置超时时间
+                    .readTimeout(10, TimeUnit.SECONDS)              //设置读取超时时间
+                    .writeTimeout(10, TimeUnit.SECONDS)             //设置写入超时时间
+//                    .sslSocketFactory(setCertificates(context.getAssets().open("zhaocc01.crt")))
+                    .sslSocketFactory(setCertificates(context, new Buffer().writeUtf8(ZHAOCC_CRT).inputStream()))
+                    .hostnameVerifier(new HostnameVerifier() {
+                        @Override
+                        public boolean verify(String hostname, SSLSession session) {
+                            try {
+                                LOGD("HostnameVerifier hostname: " + hostname + " session: " + session);
+                                session.getPeerCertificateChain();
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+                            return true;
+                        }
+                    })
+                    .build();
+            mHandler = new Handler(context.getMainLooper());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -83,6 +164,28 @@ public class RequestManager {
                 return requestPostSyncWithForm(actionUrl, params);
             case TYPE_POST_JSON:
                 return requestPostSync(actionUrl, params);
+        }
+        return null;
+    }
+
+    /**
+     * https get请求
+     *
+     * @param actionUrl the action url
+     */
+    public String httpsGetTest(String actionUrl) {
+        LOGD("httpsGetTest " + actionUrl);
+        try {
+            LOGD("requestUrl:" + actionUrl);
+            Request request = addHeaders().url(actionUrl).build();
+            Call call = mOkHttpClient.newCall(request);
+            Response response = call.execute();
+            String body = response.body().string();
+            LOGD("status:" + response.code() + " response:" + body);
+            LOGD("full response:" + response.toString());
+            return body;
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return null;
     }
@@ -190,7 +293,8 @@ public class RequestManager {
      * @param requestType the request type
      * @param params      the params
      */
-    public <T> void requestAsync(String actionUrl, int requestType, HashMap<String, String> params, final HttpCallback<T> callback) {
+    public <T> void requestAsync(String actionUrl, int requestType, HashMap<String, String> params, final
+    HttpCallback<T> callback) {
         switch (requestType) {
             case TYPE_GET:
                 requestGetAsync(actionUrl, params, callback);
@@ -253,7 +357,8 @@ public class RequestManager {
      * @param actionUrl the action url
      * @param params    the params
      */
-    private <T> void requestPostAsync(String actionUrl, HashMap<String, String> params, final HttpCallback<T> callback) {
+    private <T> void requestPostAsync(String actionUrl, HashMap<String, String> params, final HttpCallback<T>
+            callback) {
         StringBuilder sb = new StringBuilder();
         try {
             int pos = 0;
@@ -298,7 +403,8 @@ public class RequestManager {
      * @param actionUrl the action url
      * @param params    the params
      */
-    private <T> void requestPostAsyncWithForm(String actionUrl, HashMap<String, String> params, final HttpCallback<T> callback) {
+    private <T> void requestPostAsyncWithForm(String actionUrl, HashMap<String, String> params, final HttpCallback<T>
+            callback) {
         try {
             FormBody.Builder formBodyBuilder = new FormBody.Builder();
             for (String key : params.keySet()) {
@@ -413,6 +519,7 @@ public class RequestManager {
 
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
+                    LOGD("uploadFile response:" + response.toString());
                     if (response.isSuccessful()) {
                         String string = response.body().string();
                         Log.e(TAG, "response ----->" + string);
@@ -436,7 +543,8 @@ public class RequestManager {
      * @param paramsMap the params map
      * @param callback  the callback
      */
-    public <T> void uploadFile(String actionUrl, HashMap<String, Object> paramsMap, final ReqProgressCallback<T> callback) {
+    public <T> void uploadFile(String actionUrl, HashMap<String, Object> paramsMap, final ReqProgressCallback<T>
+            callback) {
         try {
             //补全请求地址
             String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
@@ -450,7 +558,8 @@ public class RequestManager {
                     builder.addFormDataPart(key, object.toString());
                 } else {
                     File file = (File) object;
-                    builder.addFormDataPart(key, file.getName(), createProgressRequestBody(MEDIA_OBJECT_STREAM, file, callback));
+                    builder.addFormDataPart(key, file.getName(), createProgressRequestBody(MEDIA_OBJECT_STREAM, file,
+                            callback));
                 }
             }
             //创建RequestBody
@@ -493,7 +602,8 @@ public class RequestManager {
      * @param callBack    the call back
      * @return the request body
      */
-    private <T> RequestBody createProgressRequestBody(final MediaType contentType, final File file, final ReqProgressCallback<T> callBack) {
+    private <T> RequestBody createProgressRequestBody(final MediaType contentType, final File file, final
+    ReqProgressCallback<T> callBack) {
         return new RequestBody() {
             @Override
             public MediaType contentType() {
@@ -597,9 +707,10 @@ public class RequestManager {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
+                LOGD("response:" + response.toString() + "\n body:" + response.body());
                 String header = response.header("Content-Disposition");
                 String headers = response.headers().toString();
-                LOGD("Content-Disposition:" + header + " headers;" + headers);
+                LOGD("Content-Disposition:" + header + "\nheaders:" + headers);
                 InputStream is = null;
                 byte[] buf = new byte[2];
                 int len = 0;
@@ -715,6 +826,57 @@ public class RequestManager {
                 }
             }
         });
+    }
+
+    /**
+     * Sets certificates.
+     *
+     * @param certificates the certificates
+     */
+    public SSLSocketFactory setCertificates(Context context, InputStream... certificates) {
+        LOGD("setCertifacates");
+        try {
+            // 构造CertificateFactory对象，通过它的generateCertificate(is)方法得到Certificate
+            CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
+            KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+            keyStore.load(null);
+            int index = 0;
+            for (InputStream certificate : certificates) {
+                LOGD("certificate inputstream: " + certificate);
+                String certificateAlias = Integer.toString(index++);
+                // 然后将得到的Certificate放入到keyStore中
+                keyStore.setCertificateEntry(certificateAlias, certificateFactory.generateCertificate(certificate));
+                try {
+                    if (certificate != null)
+                        certificate.close();
+                } catch (IOException e) {
+                }
+            }
+
+            TrustManagerFactory trustManagerFactory =
+                    TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+            // 接下来利用keyStore去初始化我们的TrustManagerFactory
+            trustManagerFactory.init(keyStore);
+
+            // 双向验证
+            // 构造客户端keystore
+            KeyStore clientKeyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+            clientKeyStore.load(context.getAssets().open("zhaocc_client.bks"), // 只能是bks格式
+                    "zhao6735107".toCharArray());
+            // 构造keyManagerFactory
+            KeyManagerFactory keyManagerFactory = KeyManagerFactory.getInstance(KeyManagerFactory.getDefaultAlgorithm
+                    ());
+            keyManagerFactory.init(clientKeyStore, "zhao6735107".toCharArray());
+
+            SSLContext sslContext = SSLContext.getInstance("TLS");
+            sslContext.init(keyManagerFactory.getKeyManagers(), // 客户端证书验证
+                    trustManagerFactory.getTrustManagers(), // 服务端证书验证
+                    new SecureRandom());
+            return sslContext.getSocketFactory();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     private void LOGD(String msg) {

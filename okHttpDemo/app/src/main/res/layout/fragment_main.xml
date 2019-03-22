@@ -112,6 +112,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="register"/>
+
+            <Button
+                android:id="@+id/https_get_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="https_get_test"/>
         </LinearLayout>
     </ScrollView>
 

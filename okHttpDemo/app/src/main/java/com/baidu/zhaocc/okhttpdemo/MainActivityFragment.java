@@ -58,6 +58,7 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         Button downloadFile = view.findViewById(R.id.downloadFile);
         Button downloadFileWithProg = view.findViewById(R.id.downdloadFileWithProgress);
         Button register = view.findViewById(R.id.register);
+        Button httpsGetTest = view.findViewById(R.id.https_get_test);
         progressBar = view.findViewById(R.id.progress);
         recEt = view.findViewById(R.id.received);
         getTestBt.setOnClickListener(this);
@@ -72,7 +73,10 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
         downloadFile.setOnClickListener(this);
         downloadFileWithProg.setOnClickListener(this);
         register.setOnClickListener(this);
+        httpsGetTest.setOnClickListener(this);
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -114,7 +118,19 @@ public class MainActivityFragment extends Fragment implements View.OnClickListen
             case R.id.register:
                 registerEmployee();
                 break;
+            case R.id.https_get_test:
+                httpsGetTest();
+                break;
         }
+    }
+
+    private void httpsGetTest() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                RequestManager.getInstance(getContext()).httpsGetTest("https://www.baidu.com");
+            }
+        }).start();
     }
 
     private void getTest() {
