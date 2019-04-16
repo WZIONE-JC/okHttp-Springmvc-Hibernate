@@ -18,7 +18,9 @@ import java.security.SecureRandom;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import javax.net.ssl.HostnameVerifier;
@@ -32,7 +34,10 @@ import javax.net.ssl.X509TrustManager;
 
 import okhttp3.Call;
 import okhttp3.Callback;
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
 import okhttp3.FormBody;
+import okhttp3.HttpUrl;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
@@ -83,7 +88,7 @@ public class RequestManager {
 
     // 请求接口根地址
     private static final String HTTP_BASE_URL = "http://172.21.205.137:8080";
-    private static final String BASE_URL = "https://172.21.205.137:443";
+    private static final String HTTPS_BASE_URL = "https://172.21.205.137:443";
     public static final int TYPE_GET = 0;//get请求
     public static final int TYPE_POST_JSON = 1;//post请求参数为json
     public static final int TYPE_POST_FORM = 2;//post请求参数为表单
@@ -139,6 +144,25 @@ public class RequestManager {
                                 e.printStackTrace();
                             }
                             return true;
+                        }
+                    })
+                    .cookieJar(new CookieJar() {
+                        @Override
+                        public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
+                            Log.d(TAG, "saveFromResponse url: " + url + " cookies: " + cookies);
+                        }
+
+                        @Override
+                        public List<Cookie> loadForRequest(HttpUrl url) {
+                            Log.d(TAG, "loadForRequest url: " + url);
+                            Cookie cookie = new Cookie.Builder()
+                                    .hostOnlyDomain(url.host())
+                                    .name("token")
+                                    .value("this is token")
+                                    .build();
+                            List<Cookie> cookies = new ArrayList<>();
+                            cookies.add(cookie);
+                            return cookies;
                         }
                     })
                     .build();
@@ -207,13 +231,13 @@ public class RequestManager {
                 sb.append(String.format("%s=%s", key, URLEncoder.encode(params.get(key), "UTF-8")));
                 pos++;
             }
-            String requestUrl = String.format("%s/%s?%s", BASE_URL, actionUrl, sb);
+            String requestUrl = String.format("%s/%s?%s", HTTPS_BASE_URL, actionUrl, sb);
             LOGD("requestUrl:" + requestUrl);
             Request request = addHeaders().url(requestUrl).build();
             Call call = mOkHttpClient.newCall(request);
             Response response = call.execute();
             String body = response.body().string();
-            LOGD("status:" + response.code() + " response:" + body);
+            LOGD("status:" + response.code() + "response headers:" + response.headers() + " response body:" + body);
             LOGD("full response:" + response.toString());
             return body;
         } catch (Exception e) {
@@ -240,7 +264,7 @@ public class RequestManager {
                 sb.append(String.format("%s=%s", key, URLEncoder.encode(params.get(key), "UTF-8")));
                 pos++;
             }
-            String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
+            String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, actionUrl);
             RequestBody requestBody = RequestBody.create(MEDIA_TYPE_JSON, sb.toString());
             LOGD("requestUrl:" + requestUrl);
             LOGD("requestBody" + sb.toString());
@@ -271,7 +295,7 @@ public class RequestManager {
                 formBodyBuilder.add(key, params.get(key));
             }
             FormBody formBody = formBodyBuilder.build();
-            String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
+            String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, actionUrl);
             LOGD("requestUrl:" + requestUrl);
             Request request = addHeaders().url(requestUrl).post(formBody).build();
             Call call = mOkHttpClient.newCall(request);
@@ -325,7 +349,7 @@ public class RequestManager {
                 sb.append(String.format("%s=%s", key, URLEncoder.encode(params.get(key), "UTF-8")));
                 pos++;
             }
-            String requestUrl = String.format("%s/%s?%s", BASE_URL, actionUrl, sb);
+            String requestUrl = String.format("%s/%s?%s", HTTPS_BASE_URL, actionUrl, sb);
             LOGD("requestUrl:" + requestUrl);
             Request request = addHeaders().url(requestUrl).build();
             Call call = mOkHttpClient.newCall(request);
@@ -369,7 +393,7 @@ public class RequestManager {
                 sb.append(String.format("%s=%s", key, URLEncoder.encode(params.get(key), "UTF-8")));
                 pos++;
             }
-            String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
+            String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, actionUrl);
             RequestBody requestBody = RequestBody.create(MEDIA_TYPE_JSON, sb.toString());
             LOGD("requestUrl:" + requestUrl);
             LOGD("requestBody" + sb.toString());
@@ -411,7 +435,7 @@ public class RequestManager {
                 formBodyBuilder.add(key, params.get(key));
             }
             FormBody formBody = formBodyBuilder.build();
-            String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
+            String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, actionUrl);
             LOGD("requestUrl:" + requestUrl);
             Request request = addHeaders().url(requestUrl).post(formBody).build();
             Call call = mOkHttpClient.newCall(request);
@@ -446,7 +470,7 @@ public class RequestManager {
      */
     public <T> void uploadFile(String actionUrl, String filePath, final HttpCallback<T> callBack) {
         //补全请求地址
-        String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
+        String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, actionUrl);
         //创建File
         File file = new File(filePath);
         //创建RequestBody
@@ -488,7 +512,7 @@ public class RequestManager {
     public <T> void uploadFile(String url, HashMap<String, Object> params, final HttpCallback<T> callback) {
         try {
             // 补全请求地址
-            String requestUrl = String.format("%s/%s", BASE_URL, url);
+            String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, url);
             MultipartBody.Builder builder = new MultipartBody.Builder();
             // 设置类型 multipart/form-data格式
             builder.setType(MultipartBody.FORM);
@@ -547,7 +571,7 @@ public class RequestManager {
             callback) {
         try {
             //补全请求地址
-            String requestUrl = String.format("%s/%s", BASE_URL, actionUrl);
+            String requestUrl = String.format("%s/%s", HTTPS_BASE_URL, actionUrl);
             MultipartBody.Builder builder = new MultipartBody.Builder();
             //设置类型
             builder.setType(MultipartBody.FORM);
@@ -643,7 +667,7 @@ public class RequestManager {
             LOGD("file has existed");
         }
 
-        Request request = addHeaders().url(BASE_URL + "/FileUpAndDown/download/" + fileUrl).build();
+        Request request = addHeaders().url(HTTPS_BASE_URL + "/FileUpAndDown/download/" + fileUrl).build();
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
@@ -696,7 +720,7 @@ public class RequestManager {
             LOGD("file has existed");
         }
 
-        Request request = addHeaders().url(BASE_URL + "/FileUpAndDown/download/" + fileUrl).build();
+        Request request = addHeaders().url(HTTPS_BASE_URL + "/FileUpAndDown/download/" + fileUrl).build();
         Call call = mOkHttpClient.newCall(request);
         call.enqueue(new Callback() {
             @Override
@@ -760,7 +784,7 @@ public class RequestManager {
             RequestBody requestBody = RequestBody.create(MEDIA_TYPE_JSON, objectMapper.writeValueAsBytes(employee));
             LOGD("requestUrl:" + requestUrl);
             LOGD("employee:" + employee.toString());
-            Request request = addHeaders().url(BASE_URL + requestUrl).post(requestBody).build();
+            Request request = addHeaders().url(HTTPS_BASE_URL + requestUrl).post(requestBody).build();
             Call call = mOkHttpClient.newCall(request);
             Response response = call.execute();
             String body = response.body().string();
